@@ -1,0 +1,87 @@
+.seat {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    background-color: #4caf4f8a; 
+    background-image: url("silla.png");
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    /*cursor: all-scroll; /*cursor de cruz*/ 
+    cursor:pointer ; /*cursor seleccion*/
+}
+.booked {
+    background-color: red; 
+    /* background-image: "silla_o.png"; */
+}
+.selected {
+    background-color: rgb(230, 216, 28); 
+    /* background-image: "silla_o.png"; */
+}
+.row {
+    display: flex;
+    align-items: center;
+}
+.section {
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.label {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    margin: 2px;
+}
+.column-labels, .row-label {
+    font-weight: bold;
+}
+.layout-container {
+    display: flex;
+    justify-content: center;
+}
+.column-label {
+    display: flex;
+    justify-content: space-between;
+}
+.row-labels-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align with the first seat row */
+}
+.empty-space {
+    height: 32px; /* To match the height of the column label row */
+}
+
+body h2{
+    text-align: center;
+}
+
+.custom-menu {
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.custom-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style-type: none;
+    transition: all .3s ease;
+    user-select: none;
+}
+
+.custom-menu li:hover {
+    background-color: #DEF;
+}
